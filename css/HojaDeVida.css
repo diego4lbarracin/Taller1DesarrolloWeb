@@ -42,6 +42,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 main {
   background-image: url(../images/BackGround_Colombian-Llanos.jpg);
@@ -50,17 +51,16 @@ main {
   color: white;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  flex-direction: row; */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 main > h2 {
   text-decoration: underline; /* Adds an underline to h2 elements */
   text-decoration-color: rgb(88, 213, 255);
-  font-size: 50px;
+  font-size: 34px;
   background-color: #00000085;
   border-radius: 10px; /* Rounds the corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
@@ -181,18 +181,63 @@ h3 {
   ); /* Sets the underline color to light blue */
 }
 
-/*
-    #ContenidoPrincipal {
-      display: flex;
-      /* flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: flex-start; 
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    } 
-    
-    
-    #ContenidoPrincipal aside {
-      flex-wrap: wrap;
-    } */
+#Educacion {
+  margin-top: 20px;
+}
+#Reconocimientos {
+  margin-bottom: 40px;
+}
+
+section {
+  border: 5px solid rgb(88, 213, 255);
+  margin: 50px;
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgba(128, 128, 128, 0.514)
+  );
+}
+
+#NavSeccionesHojaDeVida {
+  border: 5px solid rgb(88, 213, 255);
+  margin-top: 126px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgba(128, 128, 128, 0.514)
+  );
+}
+
+#NavSeccionesHojaDeVida ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px;
+  font-size: 20px;
+}
+
+#NavSeccionesHojaDeVida li {
+  margin-left: 30px;
+}
+
+#NavSeccionesHojaDeVida a:link,
+#NavSeccionesHojaDeVida a:visited {
+  color: whitesmoke; /* Sets the color of the links to white */
+  text-decoration: none; /* Optional: Removes the underline from links */
+}
+
+#NavSeccionesHojaDeVida a:hover,
+a:active {
+  color: rgb(88, 213, 255); /* Keeps the link color white on hover/active */
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+section h3 {
+  margin-left: 20px;
+  font-size: 22px;
+}

@@ -181,18 +181,24 @@ h3 {
   ); /* Sets the underline color to light blue */
 }
 
-/*
-  #ContenidoPrincipal {
-    display: flex;
-    /* flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  } 
-  
-  
-  #ContenidoPrincipal aside {
-    flex-wrap: wrap;
-  } */
+table {
+  background-color: #00000085;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+table th {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline; /* Adds an underline to h1 elements */
+  text-decoration-color: rgb(
+    88,
+    213,
+    255
+  ); /* Sets the underline color to light blue */
+}
+
+table td {
+  font-size: 20px;
+  padding: 4px;
+}
