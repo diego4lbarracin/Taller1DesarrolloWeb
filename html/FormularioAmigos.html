@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datos Biográficos | Diego Albarracin</title>
-    <link rel="stylesheet" href="../css/DatosBiograficos.css" />
+    <link rel="stylesheet" href="../css/FormularioAmigos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
     />
   </head>
   <body>
@@ -27,34 +26,39 @@
       </nav>
     </header>
     <main>
-      <h2>Datos Biográficos</h2>
-      <table>
-        <th>Información Biográfica</th>
-        <tr>
-          <td>Nombres</td>
-          <td>Diego Alejandro</td>
-        </tr>
-        <tr>
-          <td>Apellidos</td>
-          <td>Albarracin Maldonado</td>
-        </tr>
-        <tr>
-          <td>Estatura</td>
-          <td>167 cm</td>
-        </tr>
-        <tr>
-          <td>Tipo de Sangre</td>
-          <td>A+</td>
-        </tr>
-        <tr>
-          <td>Fecha de Nacimiento</td>
-          <td>24 de Abril de 2005</td>
-        </tr>
-        <tr>
-          <td>Lugar de Nacimiento</td>
-          <td>Yopal, Casanare, Colombia</td>
-        </tr>
-      </table>
+      <h2>Formulario de Amigos</h2>
+      <form action="">
+        <fieldset id="Formulario">
+          <label for="txtUsername">Username</label>
+          <input type="text" name="userName" id="txtUsername" /><br />
+
+          <label for="txtNombre">Nombre</label>
+          <input type="text" name="nombre" id="txtNombre" /><br />
+
+          <label for="urlImagen">Imagen</label>
+          <input type="url" name="imagen" id="urlImagen" /><br />
+
+          <label for="txtNombreMascota">Nombre de Mascota</label>
+          <input type="txt" name="nombreMascota" id="txtNombreMascota" /><br />
+
+          <button type="submit">Enviar Formulario</button>
+        </fieldset>
+      </form>
+      <h3>Lista de Amigos</h3>
+      <div class="seccionAmigos">
+        <table id="tablaAmigos">
+          <th>Username</th>
+          <th>Nombre</th>
+          <th>Imagen</th>
+          <tr>
+            <td>Nombres</td>
+            <td>Diego Alejandro</td>
+          </tr>
+        </table>
+        <div id="ListaMascotas">
+          <h3>Mascotas</h3>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="redesSociales">
