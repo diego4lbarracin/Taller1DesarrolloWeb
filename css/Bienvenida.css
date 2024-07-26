@@ -182,11 +182,6 @@ h3 {
   ); /* Sets the underline color to light blue */
 }
 
-/* aside h3,
-aside p {
-  margin: 0px;
-} */
-
 #ContenidoPrincipal {
   display: flex;
   justify-content: space-between;
@@ -246,4 +241,10 @@ aside img {
   max-width: 150px;
   border: 3px solid black;
   border-radius: 10px;
+}
+
+#linkWebsite {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }

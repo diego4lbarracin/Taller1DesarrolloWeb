@@ -210,3 +210,11 @@ h5 {
   align-content: center;
   padding: 20px;
 }
+
+#LinkFabricante {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline; /* Adds an underline to h1 elements */
+  text-decoration-color: rgb(88, 213, 255);
+  color: whitesmoke;
+}

@@ -172,18 +172,28 @@ table {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
 }
-table th {
-  text-align: center;
-  font-size: 30px;
-  text-decoration: underline; /* Adds an underline to h1 elements */
-  text-decoration-color: rgb(
-    88,
-    213,
-    255
-  ); /* Sets the underline color to light blue */
-}
 
 table td {
   font-size: 20px;
   padding: 4px;
+}
+
+table th {
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: bold;
+}
+
+/* Odd = Even porque el th se cuenta como el primer elemento. */
+table tr:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+/* Even = odd porque el th se cuenta como el primer elemento. */
+table tr:nth-child(even) {
+  background-color: rgb(140, 255, 149);
+  color: black;
 }

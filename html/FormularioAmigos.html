@@ -10,6 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     />
+    <script src="../script/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -27,19 +28,24 @@
     </header>
     <main>
       <h2>Formulario de Amigos</h2>
-      <form action="">
+      <form id="FormUser">
         <fieldset id="Formulario">
           <label for="txtUsername">Username</label>
-          <input type="text" name="userName" id="txtUsername" /><br />
+          <input type="text" name="userName" id="txtUsername" required /><br />
 
           <label for="txtNombre">Nombre</label>
-          <input type="text" name="nombre" id="txtNombre" /><br />
+          <input type="text" name="nombre" id="txtNombre" required /><br />
 
           <label for="urlImagen">Imagen</label>
-          <input type="url" name="imagen" id="urlImagen" /><br />
+          <input type="url" name="imagen" id="urlImagen" required /><br />
 
           <label for="txtNombreMascota">Nombre de Mascota</label>
-          <input type="txt" name="nombreMascota" id="txtNombreMascota" /><br />
+          <input
+            type="txt"
+            name="nombreMascota"
+            id="txtNombreMascota"
+            required
+          /><br />
 
           <button type="submit">Enviar Formulario</button>
         </fieldset>
@@ -47,14 +53,19 @@
       <h3>Lista de Amigos</h3>
       <div class="seccionAmigos">
         <table id="tablaAmigos">
-          <th>Username</th>
-          <th>Nombre</th>
-          <th>Imagen</th>
-          <tr>
-            <td>Nombres</td>
-            <td>Diego Alejandro</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Nombre</th>
+              <th>Imagen</th>
+              <th>Mascota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Se insertan dinámicamente con JavaScript -->
+          </tbody>
         </table>
+
         <div id="ListaMascotas">
           <h3>Mascotas</h3>
         </div>
