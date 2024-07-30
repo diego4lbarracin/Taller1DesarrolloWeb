@@ -193,14 +193,13 @@ table th {
   font-style: bold; /* Estilo de fuente en negrita */
 }
 
-/* Odd = Even porque el th se cuenta com el primero. */
 table tr:nth-child(odd) {
-  background-color: white; /* Color de fondo */
+  background-color: rgb(140, 255, 149); /* Color de fondo */
   color: black; /* Color del texto */
 }
 
 /* Even = odd porque el th se cuenta com el primero. */
 table tr:nth-child(even) {
-  background-color: rgb(140, 255, 149); /* Color de fondo */
+  background-color: white; /* Color de fondo */
   color: black; /* Color del texto */
 }
