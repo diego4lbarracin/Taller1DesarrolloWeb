@@ -1,15 +1,15 @@
-/* * {
-  border: 1px solid red;
-} */
+/* Aplica el box-sizing a todos los elementos */
 * {
   box-sizing: border-box;
-  /* background-color: rgb(26, 26, 26); */
-}
-header,
-footer {
-  background-color: rgb(26, 26, 26);
 }
 
+/* Estilo para el header y el footer */
+header,
+footer {
+  background-color: rgb(39, 39, 39);
+}
+
+/* Estilo específico para el header */
 header {
   display: flex;
   justify-content: space-between;
@@ -20,6 +20,7 @@ header {
   font-style: normal;
 }
 
+/* Estilo para la lista dentro del nav */
 nav ul {
   display: flex;
   text-decoration: none;
@@ -28,25 +29,30 @@ nav ul {
   font-size: 20px;
 }
 
+/* Estilo para el h1 dentro del header */
 header > h1 {
   margin: 20px;
   margin-left: 40px;
   color: whitesmoke;
 }
 
+/* Estilo para los elementos de la lista dentro del nav */
 nav ul li {
   margin: 20px;
 }
 
+/* Estilo para el html y el body */
 html,
 body {
   margin: 0;
   padding: 0;
 }
+
+/* Estilo para el main */
 main {
   background-image: url(../images/BackGround_Colombian-Llanos.jpg);
   background-size: cover;
-  background-position: center; /* Centers the background image */
+  background-position: center; /* Centra la imagen de fondo */
   color: white;
   height: 100vh;
   width: 100vw;
@@ -57,187 +63,218 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilo para el h2 dentro del main */
 main > h2 {
-  text-decoration: underline; /* Adds an underline to h2 elements */
+  text-decoration: underline; /* Añade un subrayado a los elementos h2 */
   text-decoration-color: rgb(88, 213, 255);
   font-size: 50px;
   background-color: #00000085;
-  border-radius: 10px; /* Rounds the corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
-  padding: 10px; /* Adds some space inside the container around the content */
-  margin-top: 20px; /* Adds space above the h2 element to prevent overlap */
+  border-radius: 10px; /* Redondea las esquinas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del contenedor */
+  padding: 10px; /* Añade espacio dentro del contenedor alrededor del contenido */
+  margin-top: 20px; /* Añade espacio encima del elemento h2 para evitar superposición */
 }
 
-/* Targeting links within the nav element */
+/* Estilo para los enlaces dentro del nav */
 nav a:link,
 nav a:visited {
-  color: whitesmoke; /* Sets the color of the links to white */
-  text-decoration: none; /* Optional: Removes the underline from links */
+  color: whitesmoke; /* Establece el color de los enlaces a blanco */
+  text-decoration: none; /* Opcional: Elimina el subrayado de los enlaces */
 }
 
-/* To ensure links remain white when hovered over or active */
+/* Para asegurar que los enlaces permanezcan blancos cuando se pasa el ratón sobre ellos o están activos */
 nav a:hover,
 nav a:active {
-  color: rgb(88, 213, 255); /* Keeps the link color white on hover/active */
+  color: rgb(
+    88,
+    213,
+    255
+  ); /* Mantiene el color del enlace blanco al pasar el ratón/activo */
   text-decoration: underline;
   font-size: 26px;
 }
 
+/* Estilo específico para el header */
 header {
-  position: fixed; /* Fixes the nav's position relative to the viewport */
-  top: 0; /* Aligns the nav to the top of the viewport */
-  width: 100%; /* Ensures the nav spans the full width */
-  z-index: 1000; /* Ensures the nav stays on top of other content */
+  position: fixed; /* Fija la posición del nav en relación con la ventana gráfica */
+  top: 0; /* Alinea el nav en la parte superior de la ventana gráfica */
+  width: 100%; /* Asegura que el nav abarque todo el ancho */
+  z-index: 1000; /* Asegura que el nav se mantenga encima de otros contenidos */
 }
 
+/* Estilo para el h1 */
 h1 {
-  text-decoration: underline; /* Adds an underline to h1 elements */
+  text-decoration: underline; /* Añade un subrayado a los elementos h1 */
   text-decoration-color: rgb(
     88,
     213,
     255
-  ); /* Sets the underline color to light blue */
+  ); /* Establece el color del subrayado a azul claro */
 }
 
-/* Style the footer container */
+/* Estilo para el contenedor del footer */
 footer {
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
-  color: white; /* Light text color for contrast */
-  align-items: center; /* Center-align the text and inline-block elements */
-  padding: 26px; /* Padding above and below the content */
-  /* width: 100%; Ensure the footer spans the full width */
+  color: white; /* Color claro para el texto para contraste */
+  align-items: center; /* Alinea el texto y los elementos en línea al centro */
+  padding: 26px; /* Espaciado arriba y abajo del contenido */
+  /* width: 100%; Asegura que el footer abarque todo el ancho */
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+/* Estilo para la clase .redesSociales */
 .redesSociales {
-  display: flex; /* Keeps .redesSociales as a flex container */
-  flex-direction: row; /* This is default for flex containers and can be omitted unless needed for clarity */
-  justify-content: flex-start; /* Aligns children to the start (left) */
-  width: 100%; /* Ensures it takes the full width of its container */
+  display: flex; /* Mantiene .redesSociales como un contenedor flex */
+  flex-direction: row; /* Esto es por defecto para los contenedores flex y puede omitirse a menos que sea necesario para claridad */
+  justify-content: flex-start; /* Alinea los hijos al inicio (izquierda) */
+  width: 100%; /* Asegura que tome todo el ancho de su contenedor */
 }
 
-/* Style the elements inside the footer to display as inline-block */
+/* Estilo para los elementos dentro del footer para que se muestren como inline-block */
 .redesSociales img,
 .redesSociales a,
 .redesSociales p {
-  display: inline-block; /* Display elements next to each other */
-  margin: 10px; /*Add some horizontal spacing between elements */
-  /*Align the elements vertically in the middle*/
+  display: inline-block; /* Muestra los elementos uno al lado del otro */
+  margin: 10px; /* Añade algo de espacio horizontal entre los elementos */
+  /* Alinea los elementos verticalmente en el medio */
   vertical-align: middle;
 }
 
-/* Example: Style specific elements if needed */
+/* Ejemplo: Estilo específico para los elementos si es necesario */
 footer a {
   font-size: 26px;
-  color: whitesmoke; /* Light blue color for links */
-  text-decoration: none; /* Remove underline from links */
+  color: whitesmoke; /* Color claro para los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
+
+/* Estilo para los elementos p dentro de .redesSociales cuando se pasa el ratón sobre ellos o están activos */
 .redesSociales p:hover,
 .redesSociales p:active {
-  color: rgb(88, 213, 255); /* Keeps the link color white on hover/active */
+  color: rgb(
+    88,
+    213,
+    255
+  ); /* Mantiene el color del enlace blanco al pasar el ratón/activo */
   text-decoration: underline;
   font-size: 30px;
 }
 
+/* Estilo para el ID #MensajeEspecial */
 #MensajeEspecial {
-  display: flex; /* Keeps #MensajeEspecial as a flex container */
-  justify-content: flex-end; /* Aligns its children (including p) to the right */
-  width: 100%; /* Ensures it takes the full width of its container */
-  margin-top: 20px; /* Adds space between .redesSociales and #MensajeEspecial */
+  display: flex; /* Mantiene #MensajeEspecial como un contenedor flex */
+  justify-content: flex-end; /* Alinea sus hijos (incluyendo p) a la derecha */
+  width: 100%; /* Asegura que tome todo el ancho de su contenedor */
+  margin-top: 20px; /* Añade espacio entre .redesSociales y #MensajeEspecial */
 }
 
+/* Estilo para los elementos p dentro de #MensajeEspecial */
 #MensajeEspecial p {
-  text-align: right; /* Aligns the text inside the paragraph to the right */
+  text-align: right; /* Alinea el texto dentro del párrafo a la derecha */
   font-size: 20px;
   margin-bottom: 0px;
   margin-top: 22px;
 }
-
 h3 {
-  text-decoration: underline; /* Adds an underline to h2 elements */
-  text-decoration-color: rgb(88, 213, 255);
-  font-size: 30px;
-  background-color: #00000085;
-  border-radius: 10px; /* Rounds the corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
-  padding: 10px; /* Adds some space inside the container around the content */
-  margin: 20px;
+  text-decoration: underline; /* Añade un subrayado a los elementos h3 */
+  text-decoration-color: rgb(
+    88,
+    213,
+    255
+  ); /* Establece el color del subrayado */
+  font-size: 30px; /* Establece el tamaño de la fuente */
+  background-color: #00000085; /* Establece el color de fondo con transparencia */
+  border-radius: 10px; /* Redondea las esquinas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del contenedor */
+  padding: 10px; /* Añade espacio dentro del contenedor alrededor del contenido */
+  margin: 20px; /* Añade espacio alrededor del contenedor */
 }
 
 fieldset {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid rgb(88, 213, 255);
-  margin: 0px;
-  padding: 20px;
-  background-image: linear-gradient(to right, black, rgba(72, 72, 72, 0.967));
+  display: flex; /* Mantiene fieldset como un contenedor flex */
+  flex-direction: row; /* Alinea los hijos en una fila */
+  justify-content: center; /* Centra los hijos horizontalmente */
+  align-items: center; /* Centra los hijos verticalmente */
+  border: 5px solid rgb(88, 213, 255); /* Establece el borde con color */
+  margin: 0px; /* Elimina el margen */
+  padding: 20px; /* Añade espacio dentro del contenedor */
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgba(72, 72, 72, 0.967)
+  ); /* Establece un fondo degradado */
 }
 
 label {
-  font-size: 20px;
-  text-decoration: underline; /* Adds an underline to h1 elements */
-  text-decoration-color: rgb(88, 213, 255);
-  font-style: italic;
-  font-weight: bolder;
+  font-size: 20px; /* Establece el tamaño de la fuente */
+  text-decoration: underline; /* Añade un subrayado a los elementos label */
+  text-decoration-color: rgb(
+    88,
+    213,
+    255
+  ); /* Establece el color del subrayado */
+  font-style: italic; /* Establece el estilo de la fuente a cursiva */
+  font-weight: bolder; /* Establece el peso de la fuente a negrita */
 }
 
 input {
-  height: auto;
-  width: auto;
-  margin: 5px;
-  font-size: 16px;
+  height: auto; /* Establece la altura automática */
+  width: auto; /* Establece el ancho automático */
+  margin: 5px; /* Añade espacio alrededor del input */
+  font-size: 16px; /* Establece el tamaño de la fuente */
 }
 
 button {
-  font-size: 18px;
-  background-color: rgb(179, 241, 246);
-  font-weight: bold;
-  text-decoration: underline; /* Adds an underline to h1 elements */
-  text-decoration-color: rgb(0, 37, 49);
+  font-size: 18px; /* Establece el tamaño de la fuente */
+  background-color: rgb(179, 241, 246); /* Establece el color de fondo */
+  font-weight: bold; /* Establece el peso de la fuente a negrita */
+  text-decoration: underline; /* Añade un subrayado a los elementos button */
+  text-decoration-color: rgb(0, 37, 49); /* Establece el color del subrayado */
 }
+
 .seccionAmigos {
-  display: flex;
-  flex-direction: row;
-  align-content: space-evenly;
-  justify-content: center;
+  display: flex; /* Mantiene .seccionAmigos como un contenedor flex */
+  flex-direction: row; /* Alinea los hijos en una fila */
+  align-content: space-evenly; /* Alinea el contenido con espacio uniforme */
+  justify-content: center; /* Centra los hijos horizontalmente */
 }
 
 #ListaMascotas > h3 {
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 20px; /* Añade espacio encima del h3 */
+  font-size: 20px; /* Establece el tamaño de la fuente */
 }
-/* Table header styling */
+
+/* Estilo para el encabezado de la tabla */
 #tablaAmigos th {
-  background-color: darkblue;
-  color: white;
-  font-weight: bold;
+  background-color: darkblue; /* Establece el color de fondo */
+  color: white; /* Establece el color del texto */
+  font-weight: bold; /* Establece el peso de la fuente a negrita */
 }
 
-/* Even rows styling */
+/* Estilo para las filas pares */
+/* Even = odd porque el th se cuenta com el primero. */
 #tablaAmigos tr:nth-child(even) {
-  background-color: white;
-  color: black;
+  background-color: rgb(140, 255, 149); /* Color de fondo */
+  color: black; /* Color del texto */
 }
 
-/* Odd rows styling */
+/* Estilo para las filas impares */
+/* Odd = Even porque el th se cuenta com el primero. */
 #tablaAmigos tr:nth-child(odd) {
-  background-color: rgb(140, 255, 149);
-  color: black;
+  background-color: white; /* Color de fondo */
+  color: black; /* Color del texto */
 }
 
 #tablaAmigos td {
-  font-size: 13px;
+  font-size: 13px; /* Establece el tamaño de la fuente */
 }
 
 #ListaMascotas {
-  background-color: #000000b7;
-  border-radius: 10px; /* Rounds the corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
-  padding: 10px; /* Adds some space inside the container around the content */
+  background-color: #000000b7; /* Establece el color de fondo con transparencia */
+  border-radius: 10px; /* Redondea las esquinas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del contenedor */
+  padding: 10px; /* Añade espacio dentro del contenedor alrededor del contenido */
 }

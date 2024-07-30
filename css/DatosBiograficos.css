@@ -1,199 +1,206 @@
-/* * {
-  border: 1px solid red;
-} */
+/* Aplica el modelo de caja de borde a todos los elementos */
 * {
   box-sizing: border-box;
-  /* background-color: rgb(26, 26, 26); */
 }
+
+/* Estilos para el header y footer */
 header,
 footer {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(39, 39, 39); /* Color de fondo oscuro */
 }
 
+/* Estilos específicos para el header */
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: space-between; /* Espacia los elementos entre sí */
+  flex-direction: row; /* Dirección de los elementos en fila */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  font-family: "DM Sans", sans-serif; /* Fuente del texto */
+  font-optical-sizing: auto; /* Ajuste óptico de la fuente */
+  font-style: normal; /* Estilo de fuente normal */
 }
 
+/* Estilos para la lista de navegación */
 nav ul {
-  display: flex;
-  text-decoration: none;
-  list-style-type: none;
-  padding: 10px;
-  font-size: 20px;
+  display: flex; /* Utiliza flexbox para el diseño */
+  text-decoration: none; /* Sin subrayado en el texto */
+  list-style-type: none; /* Sin estilo de lista */
+  padding: 10px; /* Relleno interno */
+  font-size: 20px; /* Tamaño de fuente */
 }
 
+/* Estilos para el título dentro del header */
 header > h1 {
-  margin: 20px;
-  margin-left: 40px;
-  color: whitesmoke;
+  margin: 20px; /* Margen alrededor del elemento */
+  margin-left: 40px; /* Margen izquierdo */
+  color: whitesmoke; /* Color del texto */
 }
 
+/* Estilos para los elementos de la lista de navegación */
 nav ul li {
-  margin: 20px;
+  margin: 20px; /* Margen alrededor del elemento */
 }
 
+/* Estilos para el html y body */
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin relleno */
 }
+
+/* Estilos para el main */
 main {
-  background-image: url(../images/BackGround_Colombian-Llanos.jpg);
-  background-size: cover;
-  background-position: center; /* Centers the background image */
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../images/BackGround_Colombian-Llanos.jpg); /* Imagen de fondo */
+  background-size: cover; /* Cubre todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  color: white; /* Color del texto */
+  height: 100vh; /* Altura del viewport */
+  width: 100vw; /* Ancho del viewport */
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Dirección de los elementos en columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
 }
 
+/* Estilos para los elementos h2 dentro del main */
 main > h2 {
-  text-decoration: underline; /* Adds an underline to h2 elements */
-  text-decoration-color: rgb(88, 213, 255);
-  font-size: 50px;
-  background-color: #00000085;
-  border-radius: 10px; /* Rounds the corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
-  padding: 10px; /* Adds some space inside the container around the content */
-  margin-top: 20px; /* Adds space above the h2 element to prevent overlap */
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(88, 213, 255); /* Color del subrayado */
+  font-size: 50px; /* Tamaño de fuente */
+  background-color: #00000085; /* Color de fondo con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+  padding: 10px; /* Espaciado interno */
+  margin-top: 20px; /* Margen superior */
 }
 
-/* Targeting links within the nav element */
+/* Estilos para los enlaces dentro del nav */
 nav a:link,
 nav a:visited {
-  color: whitesmoke; /* Sets the color of the links to white */
-  text-decoration: none; /* Optional: Removes the underline from links */
+  color: whitesmoke; /* Color del texto */
+  text-decoration: none; /* Sin subrayado en el texto */
 }
 
-/* To ensure links remain white when hovered over or active */
+/* Estilos para los enlaces en estado hover y active dentro del nav */
 nav a:hover,
 nav a:active {
-  color: rgb(88, 213, 255); /* Keeps the link color white on hover/active */
-  text-decoration: underline;
-  font-size: 26px;
+  color: rgb(88, 213, 255); /* Color del texto */
+  text-decoration: underline; /* Subraya el texto */
+  font-size: 26px; /* Tamaño de fuente */
 }
 
+/* Estilos adicionales para el header */
 header {
-  position: fixed; /* Fixes the nav's position relative to the viewport */
-  top: 0; /* Aligns the nav to the top of the viewport */
-  width: 100%; /* Ensures the nav spans the full width */
-  z-index: 1000; /* Ensures the nav stays on top of other content */
+  position: fixed; /* Posición fija */
+  top: 0; /* Alinea al tope del viewport */
+  width: 100%; /* Ancho completo */
+  z-index: 1000; /* Asegura que el header esté sobre otros contenidos */
 }
 
+/* Estilos para los elementos h1 */
 h1 {
-  text-decoration: underline; /* Adds an underline to h1 elements */
-  text-decoration-color: rgb(
-    88,
-    213,
-    255
-  ); /* Sets the underline color to light blue */
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(88, 213, 255); /* Color del subrayado */
 }
 
-/* Style the footer container */
+/* Estilos para el footer */
 footer {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  color: white; /* Light text color for contrast */
-  align-items: center; /* Center-align the text and inline-block elements */
-  padding: 26px; /* Padding above and below the content */
-  /* width: 100%; Ensure the footer spans the full width */
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: row; /* Dirección de los elementos en fila */
+  color: white; /* Color del texto */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  padding: 26px; /* Relleno interno */
+  font-family: "DM Sans", sans-serif; /* Fuente del texto */
+  font-optical-sizing: auto; /* Ajuste óptico de la fuente */
+  font-style: normal; /* Estilo de fuente normal */
 }
 
+/* Estilos para la clase redesSociales */
 .redesSociales {
-  display: flex; /* Keeps .redesSociales as a flex container */
-  flex-direction: row; /* This is default for flex containers and can be omitted unless needed for clarity */
-  justify-content: flex-start; /* Aligns children to the start (left) */
-  width: 100%; /* Ensures it takes the full width of its container */
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: row; /* Dirección de los elementos en fila */
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  width: 100%; /* Ancho completo */
 }
 
-/* Style the elements inside the footer to display as inline-block */
+/* Estilos para los elementos dentro de la clase redesSociales */
 .redesSociales img,
 .redesSociales a,
 .redesSociales p {
-  display: inline-block; /* Display elements next to each other */
-  margin: 10px; /*Add some horizontal spacing between elements */
-  /*Align the elements vertically in the middle*/
-  vertical-align: middle;
+  display: inline-block; /* Muestra los elementos en línea */
+  margin: 10px; /* Margen alrededor de los elementos */
+  vertical-align: middle; /* Alineación vertical al medio */
 }
 
-/* Example: Style specific elements if needed */
+/* Estilos para los enlaces dentro del footer */
 footer a {
-  font-size: 26px;
-  color: whitesmoke; /* Light blue color for links */
-  text-decoration: none; /* Remove underline from links */
+  font-size: 26px; /* Tamaño de fuente */
+  color: whitesmoke; /* Color del texto */
+  text-decoration: none; /* Sin subrayado en el texto */
 }
+
+/* Estilos para los párrafos dentro de la clase redesSociales en estado hover y active */
 .redesSociales p:hover,
 .redesSociales p:active {
-  color: rgb(88, 213, 255); /* Keeps the link color white on hover/active */
-  text-decoration: underline;
-  font-size: 30px;
+  color: rgb(88, 213, 255); /* Color del texto */
+  text-decoration: underline; /* Subraya el texto */
+  font-size: 30px; /* Tamaño de fuente */
 }
 
+/* Estilos para el contenedor con id MensajeEspecial */
 #MensajeEspecial {
-  display: flex; /* Keeps #MensajeEspecial as a flex container */
-  justify-content: flex-end; /* Aligns its children (including p) to the right */
-  width: 100%; /* Ensures it takes the full width of its container */
-  margin-top: 20px; /* Adds space between .redesSociales and #MensajeEspecial */
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: flex-end; /* Alinea los elementos al final */
+  width: 100%; /* Ancho completo */
+  margin-top: 20px; /* Margen superior */
 }
 
+/* Estilos para los párrafos dentro del contenedor con id MensajeEspecial */
 #MensajeEspecial p {
-  text-align: right; /* Aligns the text inside the paragraph to the right */
-  font-size: 20px;
-  margin-bottom: 0px;
-  margin-top: 22px;
+  text-align: right; /* Alineación del texto a la derecha */
+  font-size: 20px; /* Tamaño de fuente */
+  margin-bottom: 0px; /* Margen inferior */
+  margin-top: 22px; /* Margen superior */
 }
 
+/* Estilos para los elementos h3 */
 h3 {
-  text-decoration: underline; /* Adds an underline to h1 elements */
-  text-decoration-color: rgb(
-    88,
-    213,
-    255
-  ); /* Sets the underline color to light blue */
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(88, 213, 255); /* Color del subrayado */
 }
 
+/* Estilos para la tabla */
 table {
-  background-color: #00000085;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  background-color: #00000085; /* Color de fondo con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+  padding: 15px; /* Espaciado interno */
 }
 
+/* Estilos para las celdas de la tabla */
 table td {
-  font-size: 20px;
-  padding: 4px;
+  font-size: 20px; /* Tamaño de fuente */
+  padding: 4px; /* Espaciado interno */
 }
 
+/* Estilos para los encabezados de la tabla */
 table th {
-  background-color: darkblue;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  font-style: bold;
+  background-color: darkblue; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 30px; /* Tamaño de fuente */
+  font-style: bold; /* Estilo de fuente en negrita */
 }
 
-/* Odd = Even porque el th se cuenta como el primer elemento. */
+/* Odd = Even porque el th se cuenta com el primero. */
 table tr:nth-child(odd) {
-  background-color: white;
-  color: black;
+  background-color: white; /* Color de fondo */
+  color: black; /* Color del texto */
 }
 
-/* Even = odd porque el th se cuenta como el primer elemento. */
+/* Even = odd porque el th se cuenta com el primero. */
 table tr:nth-child(even) {
-  background-color: rgb(140, 255, 149);
-  color: black;
+  background-color: rgb(140, 255, 149); /* Color de fondo */
+  color: black; /* Color del texto */
 }
