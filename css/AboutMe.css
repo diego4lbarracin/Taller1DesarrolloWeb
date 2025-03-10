@@ -67,7 +67,7 @@ main {
 /* Estilos para el h2 dentro del main */
 main > h2 {
   text-decoration: underline; /* Subraya el texto */
-  text-decoration-color: rgb(88, 213, 255); /* Color del subrayado */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
   font-size: 40px; /* Tamaño de fuente */
   background-color: #00000085; /* Color de fondo con transparencia */
   border-radius: 10px; /* Bordes redondeados */
@@ -104,7 +104,7 @@ nav a:visited {
 /* Estilos para los enlaces en estado hover y active dentro de la navegación */
 nav a:hover,
 nav a:active {
-  color: rgb(88, 213, 255); /* Color del texto */
+  color: rgb(182, 182, 182); /* Color del texto */
   text-decoration: underline; /* Subraya el texto */
   font-size: 26px; /* Tamaño de fuente */
 }
@@ -120,7 +120,7 @@ header {
 /* Estilos para el h1 */
 h1 {
   text-decoration: underline; /* Subraya el texto */
-  text-decoration-color: rgb(88, 213, 255); /* Color del subrayado */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
 }
 
 /* Estilos para el footer */
@@ -161,7 +161,7 @@ footer a {
 /* Estilos para los párrafos dentro de la clase redesSociales en estado hover y active */
 .redesSociales p:hover,
 .redesSociales p:active {
-  color: rgb(88, 213, 255); /* Color del texto */
+  color: rgb(182, 182, 182); /* Color del texto */
   text-decoration: underline; /* Subraya el texto */
   font-size: 30px; /* Tamaño de fuente */
 }
@@ -185,7 +185,7 @@ footer a {
 /* Estilos para los elementos h3 */
 h3 {
   text-decoration: underline; /* Subraya el texto */
-  text-decoration-color: rgb(88, 213, 255); /* Color del subrayado */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
 }
 
 /* Estilos para el contenedor con id ContenidoPrincipal */
@@ -208,7 +208,7 @@ aside {
 /* Estilos adicionales para el elemento aside */
 aside {
   margin-top: 120px; /* Margen superior */
-  background-color: rgb(104, 97, 97); /* Color de fondo */
+  background-color: rgb(65, 65, 65); /* Color de fondo */
   font-family: "DM Sans", sans-serif; /* Fuente del texto */
   font-optical-sizing: auto; /* Ajuste óptico de la fuente */
   font-style: normal; /* Estilo de fuente normal */
@@ -263,4 +263,14 @@ aside img {
   margin: 0px; /* Sin margen */
   padding: 0px; /* Sin relleno */
   border: 0px; /* Sin borde */
+}
+
+#DescripcionBienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the image horizontally */
+}
+
+#FotoPerfilDiego {
+  margin: 0 auto; /* Centers the image horizontally */
 }
