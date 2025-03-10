@@ -1,6 +1,9 @@
 /* Aplica el modelo de caja de borde a todos los elementos */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Establece el color de fondo para el header y el footer */
@@ -50,10 +53,14 @@ body {
 
 /* Estilos para el elemento main */
 main {
-  margin-top: 120px; /* Margen superior */
+  margin-top: calc(120px + 1rem); /* Ajusta dinámicamente el margen */
+  min-height: calc(
+    100vh - 120px
+  ); /* Resta la altura del header */ /* Ajusta la altura restando el header y el footer */
   background-image: url(../images/BackGround_Colombian-Llanos.jpg); /* Imagen de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir el fondo */
   background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat;
   color: white; /* Color del texto */
   height: 100vh; /* Altura del viewport */
   width: 100vw; /* Ancho del viewport */
@@ -62,6 +69,8 @@ main {
   justify-content: center; /* Centra los elementos verticalmente */
   align-items: center; /* Centra los elementos horizontalmente */
   font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
+  min-height: 70vh; /* En lugar de ocupar toda la pantalla, permite que crezca con el contenido */
+  height: auto;
 }
 
 /* Estilos para el h2 dentro del main */
@@ -70,6 +79,16 @@ main > h2 {
   text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
   font-size: 40px; /* Tamaño de fuente */
   background-color: #00000085; /* Color de fondo con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+  padding: 10px; /* Espaciado interno */
+}
+
+#DescripcionBienvenida h2 {
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
+  font-size: 40px; /* Tamaño de fuente */
+  background-color: #000000c2; /* Color de fondo con transparencia */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
   padding: 10px; /* Espaciado interno */
@@ -86,7 +105,7 @@ main > h2 {
 
 /* Estilos para todos los elementos dentro del elemento con id DescripcionBienvenida */
 #DescripcionBienvenida * {
-  background-color: #00000085; /* Color de fondo con transparencia */
+  background-color: #000000c2; /* Color de fondo con transparencia */
   font-size: 1.375rem; /* Tamaño de fuente */
   margin: 1.25rem; /* Margen alrededor del elemento */
   border-radius: 10px; /* Bordes redondeados */
@@ -133,6 +152,9 @@ footer {
   font-family: "DM Sans", sans-serif; /* Fuente del texto */
   font-optical-sizing: auto; /* Ajuste óptico de la fuente */
   font-style: normal; /* Estilo de fuente normal */
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
 
 /* Estilos para el contenedor de redes sociales */
@@ -192,70 +214,14 @@ h3 {
 #ContenidoPrincipal {
   display: flex; /* Utiliza flexbox para el diseño */
   justify-content: space-between; /* Espacia los elementos entre sí */
+  min-height: calc(100vh - 200px); /* Ajusta la altura disponible */
+  padding-bottom: 0px; /* Evita que los párrafos toquen el footer */
+  flex-direction: column;
 }
 
 /* Estilos para el elemento main */
 main {
   flex-grow: 1; /* Permite que el main crezca para ocupar el espacio disponible */
-}
-
-/* Estilos para el elemento aside */
-aside {
-  width: 40%; /* Ancho del 40% */
-  margin-left: 0px; /* Margen izquierdo */
-}
-
-/* Estilos adicionales para el elemento aside */
-aside {
-  margin-top: 120px; /* Margen superior */
-  background-color: rgb(65, 65, 65); /* Color de fondo */
-  font-family: "DM Sans", sans-serif; /* Fuente del texto */
-  font-optical-sizing: auto; /* Ajuste óptico de la fuente */
-  font-style: normal; /* Estilo de fuente normal */
-  display: flex; /* Utiliza flexbox para el diseño */
-  flex-direction: column; /* Dirección de los elementos en columna */
-  justify-content: center; /* Centra los elementos verticalmente */
-  align-items: center; /* Centra los elementos horizontalmente */
-  height: 100vh; /* Altura del viewport */
-  border: 4px solid black; /* Borde sólido negro */
-}
-
-/* Estilos para los elementos h3 dentro del aside */
-aside > h3 {
-  background-color: #00000085; /* Color de fondo con transparencia */
-  font-size: 40px; /* Tamaño de fuente */
-  margin: 10px; /* Margen alrededor del elemento */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
-  padding: 10px; /* Espaciado interno */
-  color: whitesmoke; /* Color del texto */
-}
-
-/* Estilos para el contenedor con id FlagTextoWrapper dentro del aside */
-aside #FlagTextoWrapper {
-  background-color: #00000085; /* Color de fondo con transparencia */
-  font-size: 18px; /* Tamaño de fuente */
-  margin: 10px; /* Margen alrededor del elemento */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
-  padding: 10px; /* Espaciado interno */
-  color: whitesmoke; /* Color del texto */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
-}
-
-/* Estilos para los párrafos e imágenes dentro del aside */
-aside p,
-aside img {
-  margin: 10px; /* Margen alrededor de los elementos */
-}
-
-/* Estilos específicos para las imágenes dentro del aside */
-aside img {
-  float: right; /* Flota a la derecha */
-  max-width: 150px; /* Ancho máximo */
-  border: 3px solid black; /* Borde sólido negro */
-  border-radius: 10px; /* Bordes redondeados */
 }
 
 /* Estilos para el elemento con id linkWebsite */

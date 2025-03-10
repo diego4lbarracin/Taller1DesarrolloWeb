@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenida | Diego Albarracin</title>
-    <link rel="stylesheet" href="/css/AboutMe.css" />
+    <link rel="stylesheet" href="../css/Bienvenida.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,16 +19,14 @@
   <body>
     <header>
       <!-- HEADER del sitio web. -->
-      <h1>Fun Facts de Diego Albarracin | Sobre Mí</h1>
+      <h1>Fun Facts de Diego Albarracin | Bienvenida</h1>
       <nav>
         <ul>
-          <li><a href="/html/Spanish/Bienvenida.html">Bienvenida</a></li>
-          <li><a href="/html/Spanish/HojaDeVida.html">Hoja de Vida</a></li>
+          <li><a href="../html/Bienvenida.html">Bienvenida</a></li>
+          <li><a href="../html/DatosBiograficos.html">Datos Biográficos</a></li>
+          <li><a href="../html/HojaDeVida.html">Hoja de Vida</a></li>
           <li>
-            <a href="/html/Spanish/DatosBiograficos.html">Blog Personal</a>
-          </li>
-          <li>
-            <a href="/html/Spanish/MaterialInteres.html">Sobre mí</a>
+            <a href="../html/MaterialInteres.html">Material de Interés</a>
           </li>
         </ul>
       </nav>
@@ -38,23 +36,21 @@
       -->
     <div id="ContenidoPrincipal">
       <main>
+        <h2>¿Quién #$%_@ soy yo? 😊</h2>
         <div id="DescripcionBienvenida">
-          <h2>¿Quién #$%_@ soy yo?</h2>
-          <img
-            id="FotoPerfilDiego"
-            src="/images/DiegoAlbarracin.jpeg"
-            height="350px"
-            width="350px"
-            alt="FotoPerfilDiego"
-          />
           <p>
             Mis nombres son Diego Alejandro y mis apellidos son Albarracin
             Maldonado (está largo mi nombre, ¿no?) y soy orgullosamente
-            Colombiano. Nací y crecí en una región del país en donde hay más
-            vacas que seres humanos, para ser más exactos, en el precioso e
-            inmaculado departamento de Casanare.
-            <br />
-            <br />
+            Colombiano. Nací y crecí en una región del país en donde
+            <a
+              id="linkWebsite"
+              href="https://www.contextoganadero.com/ganaderia-sostenible/cadena-carnica-de-la-orinoquia-trabaja-en-proyeccion-nacional-e-internacional"
+              target="_blank"
+              >hay más vacas que seres humanos</a
+            >, para ser más exactos, en el precioso e inmaculado departamento de
+            Casanare.
+          </p>
+          <p>
             Soy muy curioso (me llamaban Jorge el Curioso cuando era pequeño),
             me gusta aprender de todo un poco y también disfruto demasiado
             enseñar lo que he aprendido. Por otro lado, en teoría me estoy
@@ -63,18 +59,22 @@
             al punto de que mis asignaturas electivas de mi carrera las he
             tomado del plan de estudios de los programas mencionadas
             previamente.
-            <br />
-            <br />
+          </p>
+          <p>
             Para concluir, en esta primitiva página web encontrará más
             información sobre mí y podrá descubrir lo que he hecho durante el
             poco tiempo (19 años) que llevo habitando el tercer planeta del
             sistema solar.
           </p>
-          <h2>Casanare</h2>
+        </div>
+      </main>
+      <aside>
+        <h3>Casanare</h3>
+        <div id="FlagTextoWrapper">
           <img
-            src="/images/CasanareFlag.png"
-            height="200px"
-            width="300px"
+            src="../images/CasanareFlag.png"
+            height="80px"
+            height="80px"
             alt="BanderaCasanare"
           />
           <p>
@@ -87,27 +87,31 @@
             ambiente natural único y es hogar de una diversa flora y fauna.
           </p>
         </div>
-      </main>
+      </aside>
     </div>
 
     <!-- Contenido del footer -->
     <footer>
       <div class="redesSociales">
         <a href="https://github.com/diego4lbarracin" target="_blank">
-          <img src="/images/GitHubLogo.png" height="40px" alt="GitHubLogo" />
+          <img src="../images/GitHubLogo.png" height="40px" alt="GitHubLogo" />
           <p>GitHub</p>
         </a>
         <a href="https://www.linkedin.com/in/diego4lbarracin/" target="_blank">
           <img
-            src="/images/linkedinLogo.png"
+            src="../images/linkedinLogo.png"
             height="40px"
             alt="linkedinLogo"
           />
           <p>LinkedIn</p>
         </a>
-        <a href="https://www.youtube.com/@diego4lbarracin" target="_blank">
-          <img src="/images/youtube.png" height="40px" alt="LogoYouTube" />
-          <p>YouTube</p>
+        <a href="../html/FormularioAmigos.html">
+          <img
+            src="../images/AmigosForm.png"
+            height="40px"
+            alt="LogoFormAmigos"
+          />
+          <p>Lista de Amigos</p>
         </a>
       </div>
       <div id="MensajeEspecial">
