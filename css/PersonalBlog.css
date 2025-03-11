@@ -1,0 +1,237 @@
+/* Aplica el modelo de caja de borde a todos los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Establece el color de fondo para el header y el footer */
+header,
+footer {
+  background-color: rgb(39, 39, 39);
+}
+
+/* Estilos específicos para el header */
+header {
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: space-between; /* Espacia los elementos entre sí */
+  flex-direction: row; /* Dirección de los elementos en fila */
+  align-items: center; /* Alinea los elementos al centro verticalmente */
+  font-family: "DM Sans", sans-serif; /* Fuente del texto */
+  font-optical-sizing: auto; /* Ajuste óptico de la fuente */
+  font-style: normal; /* Estilo de fuente normal */
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 0;
+  height: 100px; /* Aumenta la altura del header */
+  padding: 20px; /* Ajusta el espaciado interno */
+}
+
+/* Estilos para la lista de navegación dentro del header */
+nav ul {
+  display: flex; /* Utiliza flexbox para el diseño */
+  text-decoration: none; /* Sin subrayado en el texto */
+  list-style-type: none; /* Sin estilo de lista */
+  padding: 10px; /* Espaciado interno */
+  font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Estilos para el h1 dentro del header */
+header > h1 {
+  margin: 20px; /* Margen alrededor del elemento */
+  margin-left: 40px; /* Margen izquierdo específico */
+  color: whitesmoke; /* Color del texto */
+}
+
+/* Estilos para los elementos de lista dentro de la navegación */
+nav ul li {
+  margin: 20px; /* Margen alrededor del elemento */
+}
+
+/* Elimina márgenes y rellenos predeterminados de html y body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento lateral */
+  width: 100%;
+}
+
+/* Estilos para el elemento main */
+main {
+  background-image: url(../images/BackGround_Colombian-Llanos.jpg); /* Imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir el fondo */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat;
+  color: white; /* Color del texto */
+  width: 100%; /* Ancho del viewport */
+  height: 100%; /* Altura del viewport */
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Dirección de los elementos en columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
+}
+
+/* Estilos para el h2 dentro del main */
+main > h2 {
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
+  font-size: 40px; /* Tamaño de fuente */
+  background-color: #00000085; /* Color de fondo con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+  padding: 10px; /* Espaciado interno */
+}
+
+#ContenidoBlog h2 {
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
+  font-size: 40px; /* Tamaño de fuente */
+  background-color: #000000c2; /* Color de fondo con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces dentro del elemento con id ContenidoBlog */
+#ContenidoBlog a:link,
+#ContenidoBlog a:visited {
+  text-decoration: underline; /* Subraya el texto */
+  color: whitesmoke; /* Color del texto */
+  background-color: transparent; /* Fondo transparente */
+  font-style: italic; /* Estilo de fuente en cursiva */
+}
+
+/* Estilos para todos los elementos dentro del elemento con id ContenidoBlog */
+#ContenidoBlog * {
+  background-color: #00000085; /* Color de fondo con transparencia */
+  font-size: 1.375rem; /* Tamaño de fuente */
+  margin: 1.25rem; /* Margen alrededor del elemento */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+  padding: 1rem; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces dentro de la navegación */
+nav a:link,
+nav a:visited {
+  color: whitesmoke; /* Color del texto */
+  text-decoration: none; /* Sin subrayado en el texto */
+}
+
+/* Estilos para los enlaces en estado hover y active dentro de la navegación */
+nav a:hover,
+nav a:active {
+  color: rgb(182, 182, 182); /* Color del texto */
+  text-decoration: underline; /* Subraya el texto */
+  font-size: 26px; /* Tamaño de fuente */
+}
+
+/* Estilos para el h1 */
+h1 {
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: row; /* Dirección de los elementos en fila */
+  color: white; /* Color del texto */
+  align-items: center; /* Alinea los elementos al centro verticalmente */
+  padding: 26px; /* Espaciado interno */
+  font-family: "DM Sans", sans-serif; /* Fuente del texto */
+  font-optical-sizing: auto; /* Ajuste óptico de la fuente */
+  font-style: normal; /* Estilo de fuente normal */
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Estilos para el contenedor de redes sociales */
+.redesSociales {
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: row; /* Dirección de los elementos en fila */
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  width: 100%; /* Ancho completo */
+}
+/* Estilos para las imágenes, enlaces y párrafos dentro de la clase redesSociales */
+.redesSociales img,
+.redesSociales a,
+.redesSociales p {
+  display: inline-block; /* Muestra los elementos en línea */
+  margin: 10px; /* Margen alrededor de los elementos */
+  vertical-align: middle; /* Alineación vertical al medio */
+}
+
+/* Estilos para los enlaces dentro del footer */
+footer a {
+  font-size: 20px; /* Tamaño de fuente */
+  color: whitesmoke; /* Color del texto */
+  text-decoration: none; /* Sin subrayado en el texto */
+}
+
+/* Estilos para los párrafos dentro de la clase redesSociales en estado hover y active */
+.redesSociales p:hover,
+.redesSociales p:active {
+  color: rgb(182, 182, 182); /* Color del texto */
+  text-decoration: underline; /* Subraya el texto */
+  font-size: 22px; /* Tamaño de fuente */
+}
+
+/* Estilos para el contenedor con id MensajeEspecial */
+#MensajeEspecial {
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: flex-end; /* Alinea los elementos al final */
+  width: 100%; /* Ancho completo */
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para los párrafos dentro del contenedor con id MensajeEspecial */
+#MensajeEspecial p {
+  text-align: right; /* Alineación del texto a la derecha */
+  font-size: 20px; /* Tamaño de fuente */
+  margin-bottom: 0px; /* Margen inferior */
+  margin-top: 22px; /* Margen superior */
+}
+
+/* Estilos para los elementos h3 */
+h3 {
+  text-decoration: underline; /* Subraya el texto */
+  text-decoration-color: rgb(182, 182, 182); /* Color del subrayado */
+}
+
+/* Estilos para el contenedor con id ContenidoPrincipal */
+#ContenidoPrincipal {
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: space-between; /* Espacia los elementos entre sí */
+  min-height: calc(100vh - 200px); /* Ajusta la altura disponible */
+  padding-bottom: 0px; /* Evita que los párrafos toquen el footer */
+  flex-direction: column;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Estilos para el elemento main */
+main {
+  flex-grow: 1; /* Permite que el main crezca para ocupar el espacio disponible */
+}
+
+/* Estilos para el elemento con id linkWebsite */
+#linkWebsite {
+  margin: 0px; /* Sin margen */
+  padding: 0px; /* Sin relleno */
+  border: 0px; /* Sin borde */
+}
+
+#ContenidoBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the image horizontally */
+  margin-top: 0; /* Elimina cualquier espacio entre el header y el contenido */
+  padding-top: 0; /* Asegura que no haya espacio interno extra */
+}
+
+#FotoPerfilDiego {
+  margin: 0 auto; /* Centers the image horizontally */
+}
